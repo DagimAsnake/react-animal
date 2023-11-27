@@ -1,5 +1,4 @@
 import React from 'react'
-// import './Image.css'
 import chicken from "../assets/chicken.png";
 import duck from "../assets/duck.png";
 import dog from "../assets/dog.png";
