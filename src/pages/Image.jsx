@@ -1,5 +1,5 @@
 import React from 'react'
-import './Image.css'
+// import './Image.css'
 import chicken from "../assets/chicken.png";
 import duck from "../assets/duck.png";
 import dog from "../assets/dog.png";
@@ -29,19 +29,27 @@ const animals = [
 
 const Image = () => {
     return (
-      <div className="slider">
-        <div className='slide-track'>
+      <div className="w-full inline-flex flex-nowrap overflow-hidden mt-28">
+        <div className='flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll'>
         {animals.map((animal) => {
-            return (
-              <div key={animal.id} className="slide">
-                <img src={animal.image} className="" alt="" />
-              </div>
-            )
+          return (
+            <div key={animal.id} >
+              <img src={animal.image} className=' w-56 h-56 bg-white object-cover mx-3 rounded-3xl' alt="" />
+            </div>
+          )
           })}
+          </div>
+          <div className='flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll' aria-hidden="true">
+            {animals.map((animal) => {
+              return (
+                <div key={animal.id} >
+                  <img src={animal.image} className='w-56 h-56 bg-white object-cover mx-3 rounded-2xl' alt="" />
+                </div>
+              )
+              })}
           </div>
       </div>
     );
 };
 
 export default Image;
-
