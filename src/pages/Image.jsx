@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { motion } from "framer-motion";
+import React from 'react'
+import './Image.css'
 import chicken from "../assets/chicken.png";
 import duck from "../assets/duck.png";
 import dog from "../assets/dog.png";
@@ -29,26 +29,19 @@ const animals = [
 
 const Image = () => {
     return (
-      <div className="flex space-x-4 mt-28 overflow-hidden">
-        {animals.map((animal) => (
-          <motion.div
-            key={animal.id}
-            className="w-48 h-48 mx-2 relative rounded-lg overflow-hidden"
-            style={{
-              backgroundImage: `url(${animal.image})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              position: 'relative',
-              left: 0,
-              top: 0,
-            }}
-            animate={{ left: '-100%' }}
-            transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
-          />
-        ))}
+      <div className="slider">
+        <div className='slide-track'>
+        {animals.map((animal) => {
+            return (
+              <div key={animal.id} className="slide">
+                <img src={animal.image} className="" alt="" />
+              </div>
+            )
+          })}
+          </div>
       </div>
     );
 };
 
 export default Image;
+
