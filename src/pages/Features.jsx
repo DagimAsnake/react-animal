@@ -1,4 +1,3 @@
-import React from 'react'
 import fly from "../assets/fly.png";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { RiRobot2Line } from "react-icons/ri";
@@ -8,7 +7,7 @@ import { CiShare2 } from "react-icons/ci";
 const Features = () => {
   return (
     <>
-        <div className='px-4 md:px-10 lg:px-40'>
+        <div className='px-4 md:px-10'>
             <h1 className='text-3xl md:text-5xl mt-16 font-bold dark:text-white text-center'>Powerful Features for Icon Creation</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 mt-5'>
                 <div className='col-span-2 border-2 dark:border-gray-800 rounded-xl m-1 md:m-10 p-2 md:p-8'>
@@ -18,7 +17,7 @@ const Features = () => {
                     </div>
                     <div>
                         <div className='grid grid-cols-2 m-5 gap-1'>
-                            <div className='w-full md:w-80 p-2 md:p-4  border-2 dark:border-gray-800 rounded-xl'>
+                            <div className='w-full md:max-w-7xl p-2 md:p-4  border-2 dark:border-gray-800 rounded-xl'>
                                 <div className='flex justify-between items-center'>
                                     <p className='text-md md:text-xl dark:text-white'>Breed</p>
                                     <CiLocationArrow1 className='dark:text-white' />
@@ -26,7 +25,7 @@ const Features = () => {
                                 <p className='text-xl md:text-2xl font-semibold dark:text-white'>Akita</p>
                             </div>
 
-                            <div className='w-full lg:w-80 p-2 md:p-4 border-2 dark:border-gray-800 rounded-xl'>
+                            <div className='w-full md:max-w-7xl p-2 md:p-4 border-2 dark:border-gray-800 rounded-xl'>
                                 <div className='flex justify-between items-center'>
                                     <p className='text-md md:text-xl dark:text-white'>Prompt</p>
                                     <CiLocationArrow1 className='dark:text-white' />
@@ -36,7 +35,7 @@ const Features = () => {
                         </div>
 
                         <div className='grid grid-cols-2 gap-1 m-5'>
-                            <div className='w-full md:w-80 p-2 md:p-4 border-2 dark:border-gray-800 rounded-xl'>
+                            <div className='w-full md:max-w-7xl p-2 md:p-4 border-2 dark:border-gray-800 rounded-xl'>
                                 <div className='flex justify-between items-center'>
                                     <p className='text-md md:text-xl dark:text-white'>Style</p>
                                     <CiLocationArrow1 className='dark:text-white' />
@@ -44,7 +43,7 @@ const Features = () => {
                                 <p className='text-xl md:text-2xl font-semibold dark:text-white'>Anime</p>
                             </div>
 
-                            <div className='w-full lg:w-80 p-2 md:p-4 border-2 dark:border-gray-800 rounded-xl'>
+                            <div className='w-full md:max-w-7xl p-2 md:p-4 border-2 dark:border-gray-800 rounded-xl'>
                                 <div className='flex justify-between items-center'>
                                     <p className='text-md md:text-xl dark:text-white'>Colour</p>
                                     <CiLocationArrow1 className='dark:text-white' />

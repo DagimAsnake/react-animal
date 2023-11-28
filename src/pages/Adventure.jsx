@@ -5,7 +5,7 @@ import { RiRobot2Line } from "react-icons/ri";
 const Adventure = () => {
   return (
     <>
-        <div className='bg-gray-100 dark:bg-gray-900 mt-10 px-4 pb-16 md:px-10 lg:px-56'>
+        <div className='bg-gray-100 dark:bg-gray-900 mt-10 px-4 pb-16 md:px-20'>
             <h1 className='text-4xl md:text-5xl pt-16 pb-12 md:pb-24 font-semibold dark:text-white text-center'>Em-bark on Icon Adventures with PetGen!</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-14' > 
                 <div>
