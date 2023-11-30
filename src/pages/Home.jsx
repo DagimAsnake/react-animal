@@ -4,6 +4,7 @@ import Image from './Image'
 import Features from './Features'
 import Adventure from './Adventure'
 import Testimonial from './Testimonial'
+import Pricing from './Pricing'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
     <Features />
     <Adventure />
     <Testimonial />
+    <Pricing />
     </>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-center pt-12 md:pt-32">
+    <div className="flex flex-col items-center justify-center mx-5 text-center pt-12 md:pt-32">
       <p className="text-4xl md:text-7xl font-bold text-purple-500">Unleash Digital Paws</p>
       <p className="text-3xl md:text-5xl mt-1 font-bold dark:text-white">Your Pet's Moments, Enhanced by AI!</p>
       <p className="text-lg md:text-2xl mt-8 font-medium dark:text-white">Craft your custom AI companions and engage with pet lovers from around the world.</p>
